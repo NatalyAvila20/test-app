@@ -55,3 +55,4 @@ pipeline {
             echo '❌ Fallo en alguna etapa del pipeline'
         }
     }
+}
