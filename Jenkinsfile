@@ -21,8 +21,8 @@ pipeline {
 
         stage('Checkout código') {
             steps {
-                // Reemplaza con tu URL de repositorio en GitHub
-                git 'https://github.com/NatalyAvila20/test-app.git'
+                // Usando la rama correcta 'main'
+                git branch: 'main', url: 'https://github.com/NatalyAvila20/test-app.git'
             }
         }
 
@@ -55,4 +55,3 @@ pipeline {
             echo '❌ Fallo en alguna etapa del pipeline'
         }
     }
-}
